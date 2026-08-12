@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 100%; */
+    font-weight: 500;
+
+}
+
+.con {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.shop-con {
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: -50px;
+    & input {
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        padding-left: 20px;
+    }
+
+}
+
+.c-1 {
+    border-bottom: 2px solid gray;
+
+    /* display: flex; */
+    & ul {
+        list-style-type: none;
+        margin-left: 20px;
+
+    }
+
+    & li a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+}
+
+.fa-star {
+    color: rgb(255, 196, 0);
+    cursor: pointer;
+
+}
+
+
+
+.rate {
+    border-bottom: 2px solid gray;
+}
+
+.product-page {
+    margin-left: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+
+    /* margin-left: 20px; */
+    & button {
+        background-color: #DB4444;
+        color: white;
+        height: 40px;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+#select {
+    height: 40px;
+    width: 270px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-top: 10px;
+    /* padding-right: 5px; */
+    border: 1px solid gray;
+
+}
+
+.box-img {
+    margin-left: 50px;
+
+    & span {
+        color: grey;
+    }
+
+    & h5 {
+        color: #DB4444;
+        margin-top: 10px;
+    }
+}
+
+.clothes {
+    display: flex;
+
+}
+
+.t-shirt {
+    width: 250px;
+}
+
+.shoes {
+    width: 250px;
+}
+
+.bag {
+    width: 230px;
+}
+
+.ipad {
+    width: 250px;
+}
+
+.add-btn {
+    background-color: rgb(57, 56, 56);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}

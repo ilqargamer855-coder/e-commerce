@@ -1,0 +1,134 @@
+.top-bar {
+            background-color: #DB4444;
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .top-bar span {
+            font-weight: 400;
+        }
+
+        .top-bar a {
+            color: white;
+            font-weight: 600;
+            margin-left: 8px;
+            text-decoration: underline;
+        }
+
+        /* Navbar Style */
+        .navbar {
+            /* width: 50%; */
+            background-color: #ffffff;
+            border-bottom: 0.5px solid #e5e5e5;
+            padding: 20px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        .nav-links li a:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .btn-red {
+            background-color: #DB4444;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: 0.3s;
+            & a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+        .btn-shop{
+            margin-left: -100px;
+        }
+        .btn-red:hover {
+            background-color: #c33a3a;
+        }
+
+        /* Right Section: Search and Icons */
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-container {
+            position: relative;
+            background-color: #F5F5F5;
+            padding: 7px 15px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            width: 240px;
+        }
+
+        .search-container input {
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 14px;
+            color: #7d7d7d;
+        }
+
+        .search-container i {
+            color: #000;
+            font-size: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .icon-group {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon-group i {
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+a{
+    text-decoration: none;
+    color: black;
+}

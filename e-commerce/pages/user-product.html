@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="../css/admin-products.css">
+    <link rel="stylesheet" href="../css/user-product.css">
+</head>
+<body>
+    <div id="navbar-container2"></div>
+
+    <div class="container my-5">
+        <div class="mb-4">
+            <button class="btn btn-primary px-4 py-2 fw-semibold" id="newProductBtn">
+                New product
+            </button>
+        </div>
+
+        <div class="table-responsive bg-white rounded shadow-sm">
+            <table class="table align-middle text-center mb-0">
+                <thead class="table-light">
+                    <tr>
+                        <th>Id</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Category</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fw-bold">1</td>
+                        <td>Dell</td>
+                        <td>Dell XPS 13</td>
+                        <td>Laptops</td>
+                        <td>
+                            <img src="../img/noutbook.png" alt="Dell XPS 13" class="product-img">
+                        </td>
+                        <td class="text-danger fw-semibold">1,400.00 $</td>
+                        <td>
+                            <div class="rating-box">
+                                <span class="fw-bold text-dark">5</span><span class="text-muted">/5</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-edit btn-sm text-white px-3">Edit</button>
+                                <button class="btn btn-delete btn-sm text-white px-3">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fw-bold">2</td>
+                        <td>Samsung</td>
+                        <td>Galaxy Z Fold 6</td>
+                        <td>Smartphones</td>
+                        <td>
+                            <img src="../img/phone-book.png" alt="Galaxy Z Fold" class="product-img">
+                        </td>
+                        <td class="text-danger fw-semibold">1,899.00 $</td>
+                        <td>
+                            <div class="rating-box">
+                                <span class="fw-bold text-dark">4.5</span><span class="text-muted">/5</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center gap-2">
+                                <button class="btn btn-edit btn-sm text-white px-3">Edit</button>
+                                <button class="btn btn-delete btn-sm text-white px-3">Delete</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="../js/user-product.js"></script>
+    <script src="../js/load-footer.js"></script>
+    <script src="../js/load-navbar2.js"></script>
+    <script src="https://cloudflare.com"></script>
+</body>
+</html>

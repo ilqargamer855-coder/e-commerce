@@ -1,0 +1,163 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     outline: none;
+ }
+
+ body {
+     font-family: 'Inter', sans-serif;
+     background: #fff;
+     background-color: white;
+     /* padding: 80px 0; */
+ }
+
+ .con1 {
+     max-width: 1170px;
+     margin: 0 auto;
+     padding: 80px 20px;
+     background-color: white;
+
+ }
+
+ .bread {
+     margin-bottom: 80px;
+     font-size: 14px;
+     color: #000;
+ }
+
+ .bread span {
+     color: #888;
+ }
+
+ .bread a {
+     text-decoration: none;
+     color: #888;
+
+ }
+
+ a:hover {
+     text-decoration: underline;
+    color: #000;
+ }
+
+ .main-box {
+     display: flex;
+     gap: 30px;
+ }
+
+ .left {
+     width: 340px;
+     padding: 40px 35px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+     border-radius: 4px;
+ }
+
+ .right {
+     flex: 1;
+     padding: 40px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+     border-radius: 4px;
+ }
+
+ .item1 {
+     margin-bottom: 30px;
+ }
+
+ .head-box {
+     display: flex;
+     align-items: center;
+     gap: 15px;
+     margin-bottom: 25px;
+ }
+
+ .icon1 {
+     width: 40px;
+     height: 40px;
+     background: #db4444;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+ }
+
+ .head-box h3 {
+     font-size: 16px;
+     font-weight: 600;
+ }
+
+ .item1 p {
+     font-size: 14px;
+     line-height: 1.6;
+     margin-bottom: 15px;
+ }
+
+ .line {
+     height: 1px;
+     background: #000;
+     opacity: 0.3;
+     margin: 30px 0;
+ }
+
+ .form-top {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 15px;
+     margin-bottom: 30px;
+ }
+
+ .inp1 {
+     background: #f5f5f5;
+     border: none;
+     padding: 13px 15px;
+     border-radius: 4px;
+     font-size: 14px;
+     width: 100%;
+ }
+
+ .txt-area {
+     background: #f5f5f5;
+     border: none;
+     padding: 13px 15px;
+     border-radius: 4px;
+     font-size: 14px;
+     width: 100%;
+     height: 200px;
+     resize: none;
+ }
+
+ .btn-box {
+     display: flex;
+     justify-content: flex-end;
+     margin-top: 25px;
+ }
+
+ .btn1 {
+     background: #db4444;
+     color: #fff;
+     border: none;
+     padding: 16px 48px;
+     border-radius: 4px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ .btn1:hover {
+     background: #c13e3e;
+ }
+
+ @media (max-width: 992px) {
+     .main-box {
+         flex-direction: column;
+     }
+
+     .left {
+         width: 100%;
+     }
+
+     .form-top {
+         grid-template-columns: 1fr;
+     }
+ }

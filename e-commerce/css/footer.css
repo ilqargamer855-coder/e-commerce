@@ -1,0 +1,336 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    background-color: #d9534f;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+    height: 440px;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    width: max-content;
+    padding: 10px;
+}
+
+.footer-section h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subscribe-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.subscribe-box {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background: #DB4444;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    max-width: 250px;
+    outline: none;
+}
+
+.subscribe-box input {
+    border: none;
+    width: 300px;
+    outline: none;
+    flex-grow: 1;
+    padding: 8px;
+    background-color: #DB4444;
+}
+
+.subscribe-box button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #DB4444;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.app-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-download img {
+    max-width: 80px;
+}
+
+.app-icons img {
+    display: block;
+    max-width: 100px;
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin: 0 8px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #FFFFFF;
+    font-size: 400;
+} */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+/* Footer Main Styles */
+.footer {
+    background-color: #DB4444; /* Şəkildəki qırmızı/oranj tonu */
+    color: #FFFFFF;
+    padding: 80px 0 24px 0;
+    font-size: 16px;
+}
+
+.footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Columns */
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col h2.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+}
+
+.footer-col h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.footer-col p {
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #F5F5F5;
+    opacity: 0.9;
+}
+
+.footer-col a {
+    color: #F5F5F5;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+    opacity: 0.9;
+}
+
+.footer-col a:hover {
+    opacity: 1;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 16px;
+}
+
+/* Subscribe Input Box */
+.subscribe-box {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 12px 16px;
+    background: transparent;
+    max-width: 240px;
+    margin-top: 16px;
+}
+
+.subscribe-box input {
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+
+.subscribe-box input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.subscribe-box button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* App Download Section */
+.app-subtitle {
+    font-size: 12px;
+    opacity: 0.7;
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.download-wrapper {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    margin-bottom: 24px;
+}
+
+.qr-code {
+    background: #FFFFFF;
+    padding: 2px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.store-buttons {
+    display: flex;
+    flex-direction: column;
+    /* gap: 8px; */
+    justify-content: center;
+}
+
+.store-buttons img {
+    display: block;
+    object-fit: contain;
+    
+}
+.play-icon{
+    /* border: 2px solid black; */
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 5px 10px;
+    background-color: black;
+}
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+/* Copyright / Bottom Line */
+.footer-bottom {
+    margin-top: 60px;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 24px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.4; /* Figma-da adətən copyright yazısı daha sönük olur */
+}
+
+/* Responsive Design (Mobil cihazlar üçün) */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .footer {
+        padding: 60px 0 24px 0;
+    }
+    .footer-bottom {
+        margin-top: 40px;
+    }
+}
