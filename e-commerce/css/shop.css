@@ -81,6 +81,9 @@
     }
 
 }
+.product button:hover {
+     background: #c13e3e;
+}
 
 #select {
     height: 40px;
@@ -135,4 +138,7 @@
     width: 200px;
     height: 30px;
     cursor: pointer;
+}
+.add-btn:hover{
+    background: rgb(84, 83, 83);
 }

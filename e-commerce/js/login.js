@@ -1,27 +1,45 @@
-let inputs = document.querySelectorAll("from input")
-let form = document.querySelector("form")
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
 
-form.addEventListener("submit", (event) =>{ 
-    event.preventDefault();
-    $ajax({
-        url: "",
-        method: "POST",
-        contentType: "application/json",
-        data: JSON.stringify({
-            username: inputs[0].value,
-            password: inputs[1].value,
-        }),
-        success: function (res) {
-            console.log("Ugurlu login", res);
-            localStorage.setItem("activeToken", res.body.token);
-            localStorage.setItem("username", inputs[0].value)
-            window.location.href = "./index.html"
-        } ,
-        error:function(err){
-            console.log("Xeta"+err);
-            
-        },
-    });
+    if (form) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-    
+            const textInput = form.querySelector('input[type="text"]');
+            const passwordInput = form.querySelector('input[type="password"]');
+
+            if (!textInput || !passwordInput) {
+                alert("Xəta: Giriş xanalari tapilmadi!");
+                return;
+            }
+
+            const enteredUsername = textInput.value.trim();
+            const enteredPassword = passwordInput.value.trim();
+
+            if (!enteredUsername || !enteredPassword) {
+                alert("Xəta: Zəhmət olmasa bütün xanalari doldurun!");
+                return;
+            }
+
+            const registeredUser = JSON.parse(localStorage.getItem("currentUser"));
+
+            if (!registeredUser) {
+                alert("Xəta: Sistemdə qeydiyyatdan keçmiş heç bir istifadəçi tapilmadi! Öncə qeydiyyatdan keçin.");
+                return;
+            }
+
+            if (enteredUsername === registeredUser.username && enteredPassword === registeredUser.password) {
+                alert("Daxilolma uğurludur! Profilinizə yönləndirilirsiniz.");
+                
+                let currentPagePath = window.location.pathname;
+                if (currentPagePath.includes("pages")) {
+                    window.location.href = "user-details.html";
+                } else {
+                    window.location.href = "pages/user-details.html";
+                }
+            } else {
+                alert("Xəta: İstifadəçi adi və ya şifrə yanlişdir!");
+            }
+        });
+    }
 });

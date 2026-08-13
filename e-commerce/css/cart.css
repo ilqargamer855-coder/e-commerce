@@ -56,6 +56,10 @@ button{
     font-weight: 500;
     
 }
+button:hover {
+     background: #c13e3e;
+}
+
 img{
     width: 100px;
     height: 100px;

@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px 0 50px 0;
 }
 
 .btn-primary {
@@ -27,6 +28,8 @@ body {
     padding: 10px 20px;
     font-size: 15px;
     transition: background-color 0.2s;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .btn-primary:hover {
@@ -36,7 +39,7 @@ body {
 .table-responsive {
     border: 1px solid #e9ecef;
     border-radius: 0px;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .table {
@@ -68,7 +71,7 @@ body {
 }
 
 .fw-bold {
-    color: #212529 !important;
+    color: #212529 ;
 }
 
 .product-img {
@@ -80,7 +83,7 @@ body {
 }
 
 .text-danger {
-    color: #212529 !important;
+    color: #212529 ;
 }
 
 .rating-box {
@@ -89,7 +92,7 @@ body {
 }
 
 .text-muted {
-    color: #6c757d !important;
+    color: #6c757d;
 }
 
 .btn-edit {
@@ -100,6 +103,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     transition: background-color 0.2s;
+    color: white;
 }
 
 .btn-edit:hover {
@@ -114,6 +118,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     transition: background-color 0.2s;
+    color: white;
 }
 
 .btn-delete:hover {
@@ -121,5 +126,5 @@ body {
 }
 
 .gap-2 {
-    gap: 8px !important;
+    gap: 8px ;
 }

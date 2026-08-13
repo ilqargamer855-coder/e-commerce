@@ -3,16 +3,23 @@ let form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const nameInput = document.querySelector('.account:nth-child(1) input');
-    const surnameInput = document.querySelector('.account:nth-child(2) input');
-    const emailInput = document.querySelector('.account:nth-child(3) input');
-    const usernameInput = document.querySelector('.account:nth-child(4) input');
+    const formInputs = event.target.querySelectorAll("input");
+    let nameVal = "", surnameVal = "", emailVal = "", usernameVal = "", passwordVal = "";
+
+    formInputs.forEach((input, index) => {
+        if (index === 0) nameVal = input.value.trim();
+        if (index === 1) surnameVal = input.value.trim();
+        if (index === 2) emailVal = input.value.trim();
+        if (index === 3) usernameVal = input.value.trim();
+        if (index === 4) passwordVal = input.value.trim();
+    });
 
     const userToSave = {
-        name: nameInput ? nameInput.value.trim() : "İlqar",
-        surname: surnameInput ? surnameInput.value.trim() : "Zülfüqarlı",
-        email: emailInput ? emailInput.value.trim() : "example@gmail.com",
-        username: usernameInput ? usernameInput.value.trim() : "example"
+        name: nameVal || "İlqar",
+        surname: surnameVal || "Zülfüqarlı",
+        email: emailVal || "example@gmail.com",
+        username: usernameVal || "example",
+        password: passwordVal || "123456"
     };
     
     localStorage.setItem("currentUser", JSON.stringify(userToSave));
